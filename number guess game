@@ -1,0 +1,20 @@
+#guess the number game which tells chances and direction  
+num = 18
+chances = 1
+print("you are getting 9 chances")
+while chances < 10:
+    guess = (int(input("Enter guess")))
+    if guess > num:
+        print("need to go down")
+    elif guess < num:
+        print("need to go up")
+    else:
+        print("gotcha")
+        break
+    chances = chances + 1
+
+if chances==10:
+    print("chances over")
+    print(chances)
+elif chances<10:
+    print("no.of chances used",chances)
